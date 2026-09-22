@@ -1,12 +1,21 @@
-#wrap{
-    width: 1000px;
-    height: 800px;
-    margin: 0 auto;
-    background-color: white;
+body {
+    background-color: #0b132b;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px 0;
 }
 
-#header{
-    background-image: url(images_Biodata/header.jpg);
+#wrap {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    background-color: #ffffff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border: 1px solid #c5a059;
+}
+
+#header {
+    background-image: url('images_Biodata/header.jpeg');
     background-size: cover;
     background-position: center;
     border-bottom-right-radius: 50px;
@@ -17,103 +26,82 @@
     float: right;
 }
 
-#judul{
-    font-size: 50px;
+#judul {
+    font-size: 42px;
     text-align: right;
-    padding: 200px 40px 0 0;
+    padding: 170px 40px 0 0;
 }
 
-#judul a{
-    color: white;
+#judul a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #f4e8c1;
     text-decoration: none;
+    letter-spacing: 1px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
 }
 
-#judul a:hover{
-    color: grey;
+#judul a:hover {
+    color: #c5a059;
 }
 
-.desc{
-    font-size: 30px;
-    color: white;
+.desc {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #ffffff;
     text-align: right;
-    padding: 0 40px 0 0;
+    padding: 5px 40px 0 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
 }
 
-#menu ul{
+#menu ul {
     display: flex;
     justify-content: center;
     align-items: center;
     float: right;
-    background: darkblue;
-    padding: 0 0px;
+    background: #0b132b;
+    padding: 0;
+    margin: 0;
     position: relative;
     box-shadow: 0 0 10px rgba(0,0,0,.25);
     list-style: none;
     width: 730px;
+    border-bottom: 2px solid #c5a059;
 }
 
-#menu ul:after{
+#menu ul:after {
     content: "";
     clear: both;
     display: block;
 }
 
-#menu ul li{
+#menu ul li {
     float: left;
 }
 
-#menu ul li:hover{
-    background: blue;
+#menu ul li:hover {
+    background: #c5a059;
 }
 
-#menu ul li a{
+#menu ul li a {
     display: block;
-    color: white;
+    color: #f4e8c1;
     padding: 10px 20px;
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
 }
 
-#menu ul li:hover a{
-    color: white;
+#menu ul li:hover a {
+    color: #0b132b;
 }
 
-#menu ul li:hover > ul {
-    display: block;
-}
-
-#menu ul ul{
-    background: darkblue;
-    position: absolute;
-    padding: 0;
-    top: 100%;
-    display: none;
-    width: auto;
-}
-
-#menu ul ul li{
-    float: none;
-    position: relative;
-}
-
-#menu ul ul li a{
-    padding: 10px 30px;
-    color: white;
-}
-
-#menu ul ul li a:hover{
-    background: blue;
-    color: white;
-}
-
-#menu ul ul ul{
-    position: absolute;
-    left: 100%;
-    top: 0;
-}
-
-#kiri{
+#kiri {
     border-top-left-radius: 50px;
-    background-color: white;
+    background-color: #ffffff;
     width: 250px;
     height: auto;
     margin: 0 0 20px;
@@ -122,95 +110,113 @@
     box-shadow: 0 0 10px rgba(0,0,0,.25);
 }
 
-#kiri ul{
+#kiri ul {
     margin: 0 0 20px 20px;
     padding: 0;
     list-style: none;
     width: 200px;
 }
 
-#kiri li{
+#kiri li {
     width: 100%;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
-#kiri h2{
-    margin: 0px 0 0px 0;
-    padding: 5px 12px;
-    color: white;
-    font-size: 20px;
-    background: darkblue;
+#kiri h2 {
+    margin: 0;
+    padding: 8px 12px;
+    color: #c5a059;
+    font-size: 18px;
+    background: #0b132b;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    border-left: 4px solid #c5a059;
 }
 
-#kiri a{
+#kiri a {
     display: block;
-    padding: 3px 10px;
+    padding: 8px 10px;
     text-decoration: none;
-    color: black;
-    border-bottom: 1px dotted blue;
+    color: #1f2937;
+    border-bottom: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+    font-size: 14px;
 }
 
-#kiri a:hover{
-    background: blue;
-    color: white;
+#kiri a:hover {
+    background: #0b132b;
+    color: #c5a059;
+    padding-left: 15px;
 }
 
-#logo{
-    width: 180px;
-    height: auto;
-}
-
-#konten{
-    background-color: white;
-    width: 690px;
-    height: auto;
-    margin: 0 0 20px;
-    padding: 20px 20px 20px 20px;
-    float: right;
-    box-shadow: 0 0 10px rgba(0,0,0,.25);
-}
-
-.posttitle{
-    text-decoration: none;
-    font-size: 30px;
-    font-family: Arial;
-    color: blue;
-}
-
-.posttitle a{
-    text-decoration: none;
-}
-
-.post{
-    margin: 0 20px 0 20px;
-    text-align: justify;
-}
-
-b a{
-    color: blue;
-    text-decoration: none;
-}
-
-img{
-    width: 30%;
-}
-
-#logo{
+#logo {
     width: 200px;
     height: 200px;
 }
 
-#footer{
-    background-color: darkblue;
-    padding: 20px 0 0 0;
+#konten {
+    background-color: #ffffff;
+    width: 690px;
+    min-height: 380px;
+    height: auto;
+    margin: 0 0 20px;
+    padding: 20px;
+    float: right;
+    box-shadow: 0 0 10px rgba(0,0,0,.25);
+    box-sizing: border-box;
+}
+
+.posttitle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #0b132b;
+    border-bottom: 2px solid #c5a059;
+    display: inline-block;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.post {
+    margin: 0 10px;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #374151;
+    line-height: 1.6;
+}
+
+.post img {
+    width: 30%;
+    border: 2px solid #c5a059;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.post img:hover {
+    transform: scale(1.03);
+}
+
+b a {
+    color: #0b132b;
+    text-decoration: none;
+}
+
+#footer {
+    background-color: #0b132b;
+    padding: 15px 0;
     width: 1000px;
-    height: 90px;
+    height: auto;
     clear: both;
-    margin: 20 0;
+    margin: 20px 0 0 0;
     text-align: center;
-    color: white;
+    color: #c5a059;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
+    border-top: 2px solid #c5a059;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
 }
